@@ -5,6 +5,7 @@ import { FlexmonsterPivotModule } from 'ng-flexmonster';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DashboardsModule } from './dashboards/dashboards.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FlexmonsterPivotModule
+    FlexmonsterPivotModule,
+    DashboardsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
