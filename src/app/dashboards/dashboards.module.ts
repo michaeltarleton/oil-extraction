@@ -1,17 +1,27 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { DataGridComponent } from './data-grid/data-grid.component';
-import { FlexmonsterPivotModule } from 'ng-flexmonster';
-import { ExtractionsDataGridComponent } from './extractions-data-grid/extractions-data-grid.component';
-
-
+import { NgModule } from '@angular/core'
+import { CommonModule } from '@angular/common'
+import { DataGridComponent } from './data-grid/data-grid.component'
+import { FlexmonsterPivotModule } from 'ng-flexmonster'
+import { ExtractionsDataGridComponent } from './extractions-data-grid/extractions-data-grid.component'
+import { CurrentReservesComponent } from './current-reserves/current-reserves.component'
+import { DailyExtractionsComponent } from './daily-extractions/daily-extractions.component'
+import { ForecastingDepletionComponent } from './forecasting-depletion/forecasting-depletion.component'
 
 @NgModule({
-  declarations: [DataGridComponent, ExtractionsDataGridComponent],
-  imports: [
-    CommonModule,
-    FlexmonsterPivotModule
+  declarations: [
+    DataGridComponent,
+    ExtractionsDataGridComponent,
+    CurrentReservesComponent,
+    DailyExtractionsComponent,
+    ForecastingDepletionComponent,
   ],
-  exports: [DataGridComponent, ExtractionsDataGridComponent]
+  imports: [CommonModule, FlexmonsterPivotModule],
+  exports: [
+    DataGridComponent,
+    ExtractionsDataGridComponent,
+    CurrentReservesComponent,
+    DailyExtractionsComponent,
+    ForecastingDepletionComponent,
+  ],
 })
-export class DashboardsModule { }
+export class DashboardsModule {}
