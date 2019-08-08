@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../../environments/environment';
-import { Report, DataSource } from 'flexmonster';
+import { Report, DataSource, Hierarchy } from 'flexmonster';
 
 @Component({
   selector: 'app-data-grid',
@@ -72,7 +72,15 @@ export class DataGridComponent implements OnInit {
 
   report: Report = {
     dataSource: {
+      dataSourceType: 'json',
       data: this.data
+    },
+    options: {
+      grid: {
+        type: 'flat',
+        showTotals: false,
+        showGrandTotals: 'off'
+      }
     }
   };
 
