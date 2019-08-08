@@ -29,10 +29,10 @@
             ],
             "styles": [
               "src/styles.scss",
-              "/node_modules/flexmonster/flexmonster.min.css"
+              "node_modules/flexmonster/flexmonster.min.css"
             ],
             "scripts": [
-              "/node_modules/flexmonster/flexmonster.full.js"
+              "node_modules/flexmonster/flexmonster.full.js"
             ]
           },
           "configurations": {
