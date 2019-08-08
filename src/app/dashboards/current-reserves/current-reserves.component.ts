@@ -16,15 +16,48 @@ export class CurrentReservesComponent implements OnInit {
       dataSourceType: 'json',
       data,
     },
+    slice: {
+      rows: [
+        {
+          uniqueName: 'site',
+        },
+        {
+          uniqueName: 'well',
+        },
+      ],
+      columns: [
+        {
+          uniqueName: '[Measures]',
+        },
+      ],
+      measures: [
+        {
+          uniqueName: 'Total Oil Reserves',
+          formula: 'sum("oil")',
+          caption: 'Total Oil Reserves',
+        },
+        {
+          uniqueName: 'Total Natural Gas Reserves',
+          formula: 'sum("naturalGas")',
+          caption: 'Total Natural Gas Reserves',
+        },
+      ],
+    },
     options: {
+      viewType: 'charts',
       grid: {
-        type: 'flat',
         showTotals: false,
         showGrandTotals: 'off',
       },
-      datePattern: 'MM/dd/yyyy',
+      chart: {
+        activeMeasure: {
+          uniqueName: 'Total Oil Reserves',
+          aggregation: 'none',
+        },
+      },
     },
   }
+
   constructor() {}
 
   ngOnInit() {}

@@ -16,11 +16,50 @@ export class DailyExtractionsComponent implements OnInit {
       dataSourceType: 'json',
       data,
     },
+    slice: {
+      rows: [
+        {
+          uniqueName: 'extractionDate',
+          sortName: 'unsorted',
+        },
+        {
+          uniqueName: 'site',
+          sortName: 'unsorted',
+        },
+        {
+          uniqueName: 'well',
+          sortName: 'unsorted',
+        },
+      ],
+      columns: [
+        {
+          uniqueName: '[Measures]',
+        },
+      ],
+      measures: [
+        {
+          uniqueName: 'oil',
+          aggregation: 'sum',
+        },
+        {
+          uniqueName: 'naturalGas',
+          aggregation: 'sum',
+        },
+      ],
+    },
     options: {
+      viewType: 'charts',
       grid: {
         type: 'flat',
         showTotals: false,
         showGrandTotals: 'off',
+      },
+      chart: {
+        type: 'line',
+        activeMeasure: {
+          uniqueName: 'oil',
+          aggregation: 'sum',
+        },
       },
       datePattern: 'MM/dd/yyyy',
     },
