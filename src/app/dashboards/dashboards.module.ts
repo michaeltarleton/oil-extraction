@@ -12,6 +12,6 @@ import { ExtractionsDataGridComponent } from './extractions-data-grid/extraction
     CommonModule,
     FlexmonsterPivotModule
   ],
-  exports: [DataGridComponent]
+  exports: [DataGridComponent, ExtractionsDataGridComponent]
 })
 export class DashboardsModule { }
