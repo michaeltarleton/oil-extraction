@@ -1,8 +1,8 @@
-import { Component, OnInit } from '@angular/core';
-import { environment } from '../../../environments/environment';
-import { Report } from 'flexmonster';
+import { Component, OnInit } from '@angular/core'
+import { environment } from '../../../environments/environment'
+import { Report } from 'flexmonster'
 
-import { data } from '../data/extractions.data';
+import { data } from '../data/extractions.data'
 
 @Component({
   selector: 'app-extractions-data-grid',

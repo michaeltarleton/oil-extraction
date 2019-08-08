@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   selector: 'app-current-reserves',
   templateUrl: './current-reserves.component.html',
-  styleUrls: ['./current-reserves.component.scss']
+  styleUrls: ['./current-reserves.component.scss'],
 })
 export class CurrentReservesComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
