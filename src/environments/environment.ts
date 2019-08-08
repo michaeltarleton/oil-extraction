@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  flexMonsterTrialKey: 'Z7MS-XC2J2X-5Y4I3P-431F00'
 };
 
 /*

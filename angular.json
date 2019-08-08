@@ -28,9 +28,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "/node_modules/flexmonster/flexmonster.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "/node_modules/flexmonster/flexmonster.full.js"
+            ]
           },
           "configurations": {
             "production": {
